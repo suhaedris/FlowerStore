@@ -1,0 +1,231 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 50px;
+    margin-left: 50px;
+    background: linear-gradient(108.81deg, #7C8761 -21.51%, #80AF81 36.42%, rgba(26, 83, 25, 0.9) 87.8%);
+    display: flex;
+}
+.container{
+    font-family: "Poppins";
+    position: relative;
+    margin-top: 100px;
+    margin-left: 140px;
+    width: 940px;
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px;
+    border: 1px solid #F1F1F17A;
+    box-shadow: -47.43px 47.43px 47.43px 0px #FFFFFF1A inset;
+    box-shadow: 47.43px -47.43px 47.43px 0px #C2C2C21A inset;
+    background: #FFFFFF1A;
+    backdrop-filter: blur(10px);
+    display: block;
+    animation: slidein 0.5s ease-in;
+}
+#l1{
+    position: relative;
+    width: 552px;
+    height: 54px;
+    margin-top: 150px;
+    margin-left: 170px;
+    margin-bottom: 40px;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 54px;
+    text-align: center;
+    background: linear-gradient(180deg, #508D4E -14.81%, #161313 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3{
+    width: 96px;
+    color: #fff;
+    font-family: "Pristina";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 71.81px;
+    text-align: left;
+    height: 72px;
+    top: 172px;
+    left: 156px;
+}
+.btn{
+    position: relative;
+    width: 168px;
+    height: 50px;
+    top: 7%;
+    left: 70%;
+    border-radius: 45px;
+    border: 1px;
+    background: #7C8761AB;
+    border: 1px solid #FCFCFC;
+    color: #ffffff;
+    transition-duration: 0.4s;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+.btn:hover {
+        transform: scale(1.02);
+}
+.imgs{
+    display: flex;
+    float: left;
+    position: relative;
+}
+#img1{
+    width: 395px;
+    height: 238px;
+    top: 20px;
+    position: relative;
+}
+#img2{
+    width: 341px;
+    height: 273px;
+    top: -15px;
+    position: relative;
+    left: -50px;
+}
+#img3{
+    width: 263px;
+    height: 298px;
+    top: -80px;
+    position: relative;
+    left: -200px;
+}
+#popup {
+    display: none;
+    position: absolute;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 449px;
+    height: 250px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    left: 40%;
+    top:30%;
+    background-color: rgba(256, 256, 256, 0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+} 
+.pop p{
+    position: relative;
+    clear: both;
+    width: 340px;
+    height: 30px;
+    left: 10%;
+    padding-top: 25px;
+    padding-bottom: 0;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    background: #80AF81;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#logout{
+    clear: both;
+    font-family: "Poppins";
+    color: white;
+    font-size: 18px;
+    width: 276px;
+    height: 50px;
+    margin-top: 0;
+    padding: 10px 0px 10px 0px;
+    border-radius: 45px;
+    border: 1px;
+    background: #7C8761AB;
+    border: 1px solid #FCFCFC;
+    cursor: pointer;
+}
+#logout:hover{
+    transform: scale(1.02);
+}
+#cancel{
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    background: #7C8761A1;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    clear: both;
+    border: none;
+    cursor: pointer;
+}
+#cancel:hover{
+    transform: scale(1.02);
+}
+.container.active{
+    filter: blur(5px);
+}
+
+h3.active{
+    filter: blur(5px);
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    body{
+        margin:20px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    .container{
+        width: 90%;
+        height: 85vh;
+        margin-left: 0;
+        padding: 0;
+    }
+    #l1{
+        width: 100%;
+        margin-left: 0;
+        font-size: 28px;
+    }
+    .imgs{
+        width: 100%;
+    }
+    #img1, #img2, #img3{
+        width: 50%;
+    }
+    .btn{
+        width: 25%;
+    }
+    #popup {
+        width: 50%;
+        left: 30%;
+        top:20%;
+    }
+    #logout{
+        width: 50%;
+    }
+
+}
