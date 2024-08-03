@@ -81,7 +81,6 @@ h3{
 }
 .imgs{
     display: flex;
-    float: left;
     position: relative;
 }
 #img1{
@@ -201,23 +200,27 @@ h3.active{
     }
     .container{
         width: 90%;
-        height: 85vh;
         margin-left: 0;
         padding: 0;
     }
     #l1{
         width: 100%;
         margin-left: 0;
-        font-size: 28px;
+        font-size: 20px;
     }
     .imgs{
-        width: 100%;
+        width: 90%;
+    }
+    #img3{
+        left: -130px;
     }
     #img1, #img2, #img3{
-        width: 50%;
+        margin-right:25% ;
+        width: 30%;
     }
     .btn{
         width: 25%;
+        font-size: 14px;
     }
     #popup {
         width: 50%;
@@ -226,6 +229,7 @@ h3.active{
     }
     #logout{
         width: 50%;
+        font-size: 16px;
     }
 
 }
