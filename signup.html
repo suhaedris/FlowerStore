@@ -6,27 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="signup.css">
+<!-- <script src="text.js"></script>     -->
+<link rel="stylesheet" href="signup.css">
     <title>signup</title>
 </head>
 <body>
-    <h3>logo</h3>
+    <nav>
+        <h3>logo</h3>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+            <option value="fr">French</option>
+            <option value="gr">German</option>
+        </select>
+         <button id="theme-switch">
+    
+            <svg xmlns="http://www.w3.org/2000/svg" width="60%" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+    
+          <svg xmlns="http://www.w3.org/2000/svg" width="60%"  fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+          </svg>
+         
+        </button>
+    </nav>
     <div class="box">
         <img src="img/Rectangle 16.png" id="img1" >
     <div class="container">
         <form action="verify.html" id="f1" >
-            <h1 id="l1">SIGN UP</h1> 
+            <h1 id="si">SIGN UP</h1> 
        <div><img src="img/frame.png" id="img2" ></div>
             <input type="text" id="name" placeholder="User Name" maxlength="10" class="in">  
             <input type="phone" id="phone" placeholder="Phone Number" class="in"> <br>
             <input type="email" id="email" placeholder="Email"  class="in"> 
             <input type="password" placeholder="Password" id="p" class="in"><br>
-            <input type="password" placeholder="Re Password"  class="in">
-            <input type="text" placeholder="Upload  Certificate" class="in"> <br>
+            <input type="password" placeholder="Re Password" id="p1" class="in">
+            <input type="text" placeholder="Upload  Certificate" id="up" class="in"> <br>
             <input type="submit" id="submit" value="Sign Up" class="btn" > <br>
-            <span id="sp">have an account? <a href="login.html" >login</a></span> 
+            <span id="sp">have an account? </span> <a href="login.html" id="a1">login</a>
         </form>
     </div>
+    
+    <div id="customConfirm" class="modal">
+        <div class="modal-content">
+        <p>هل  ترغب في حفظ التعديلات ؟</p>
+        <br><br> <button id="yesButton">نعم</button>
+        <br><br> <button id="noButton">لا</button>
+        </div>
+    </div>
+    <script>
+        let darkmood = localStorage.getItem("dark-mood");
+        const themeswitch = document.getElementById("theme-switch");
+        const enableDarkmood = ()=>{
+            document.body.classList.add('dark-mood');
+            localStorage.setItem('dark-mood' , 'active')
+        }
+        const disableDarkmood= ()=>{
+            document.body.classList.remove('dark-mood');
+            localStorage.setItem('dark-mood' , null)
+        }
+        if(darkmood==="active") enableDarkmood()
+        themeswitch.addEventListener("click", ()=>{
+            darkmood = localStorage.getItem('dark-mood')
+            darkmood !== "active" ? enableDarkmood() : disableDarkmood()
+        }) 
+//languages
+        const translations = {
+    en: {
+        l1: "User Name",
+        em : "Email",
+        ph: "Phone Number",
+        p :"Password",
+        p1:"Re Password",
+        btn :"signup",
+        up: "Upload  Certificate",
+        ha :" have an account?",
+        l:"login",
+        sign:"SIGN UP"
+    },
+    ar: {
+        l1: "اسم المستخدم",
+        em : "البريد الالكتروني",
+        ph: "رقم الهاتف",
+        p :"كلمة السر",
+        p1:"تأكيد كلمة السر",
+        btn :"تسجيل",
+        up: "تحميل الشهادة",
+        ha :"لديك حساب؟",
+        l:"تسجيل دخول",
+        sign: "تسجيل"
+    },
+    fr: {
+        l1: "Nom d'utilisateur",
+        em : "E-Mail",
+        ph: "Numéro de téléphone",
+        p :"Mot de passe",
+        p1:"Répéter le mot de passe",
+        btn :"s'inscrire",
+        up: "télécharger le certificat",
+        ha :"Vous avez un compte ?",
+        l:"connexion",
+        sign:"S'INSCRIRE" //inscription
+    }, 
+     gr: {
+        l1: "Benutzername",
+        em : "E-Mail",
+        ph: "Telefonnummer",
+        p :"Passwort",
+        p1:"Passwort wiederholen",
+        btn :"Registrierung",
+        up: "Zertifikat hochladen",
+        ha :"Habben Sie ein Konto?",
+        l:"einloggen",
+        sign:"REGISTRIERUNG"
+    }
+};
+
+function changeLanguage(language) {
+    document.getElementById("name").placeholder = translations[language].l1;
+    document.getElementById("si").innerText= translations[language].sign;
+    document.getElementById("phone").placeholder = translations[language].ph;
+    document.getElementById("email").placeholder = translations[language].em ;
+    document.getElementById("p").placeholder = translations[language].p;
+    document.getElementById("p1").placeholder = translations[language].p1;
+    document.getElementById("submit").value = translations[language].btn;
+    document.getElementById("up").placeholder= translations[language].up;
+    document.getElementById("sp").innerText = translations[language].ha;
+    document.getElementById("a1").innerText = translations[language].l;
+   
+    if(language === 'ar'){
+        document.getElementById("p").style.textAlign='right';
+        document.getElementById("phone").style.textAlign='right';
+        document.getElementById("email").style.textAlign='right';
+        document.getElementById("p1").style.textAlign='right';
+        document.getElementById("name").style.textAlign='right';
+        document.getElementById("up").style.textAlign='right';
+    }else{
+        document.getElementById("p").style.textAlign='left';
+        document.getElementById("phone").style.textAlign='left';
+        document.getElementById("email").style.textAlign='left';
+        document.getElementById("p1").style.textAlign='left';
+        document.getElementById("name").style.textAlign='left';
+        document.getElementById("up").style.textAlign='left';
+    }
+
+  
+    localStorage.setItem('selectedLanguage', language);
+}
+window.onload= function(event) {
+    document.getElementById('customConfirm').style.display = 'block';
+    
+};
+
+document.getElementById('yesButton').onclick = function() {
+    
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en'; 
+    
+    changeLanguage(savedLanguage);
+    
+    
+    document.getElementById("language-select").value = savedLanguage;
+
+    document.getElementById('customConfirm').style.display = 'none';
+ 
+ 
+};
+
+document.getElementById('noButton').onclick = function() {
+    document.getElementById('customConfirm').style.display = 'none';
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en'; 
+    document.body.classList.remove('dark-mood');   
+
+};
+
+window.onclick = function(event) {
+    const modal = document.getElementById('customConfirm');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+};
+    </script>
   
 </body>
 </html>

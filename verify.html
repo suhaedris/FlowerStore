@@ -10,7 +10,27 @@
     <title>verify</title>
 </head>
 <body>
-    <h3>logo</h3>
+    <nav>
+        <h3>logo</h3>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+            <option value="fr">French</option>
+            <option value="gr">German</option>
+        </select>
+         <button id="theme-switch">
+    
+            <svg xmlns="http://www.w3.org/2000/svg" width="60%" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+    
+          <svg xmlns="http://www.w3.org/2000/svg" width="60%"  fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+          </svg>
+         
+        </button>
+    </nav>
     <div class="box">
         <img src="img/Rectangle 16.png" id="img1" >
     <div class="container">
@@ -21,15 +41,119 @@
            <span><h5 id="p1">The verification code has been sent to your email</h5>
        <p id="p2">*****@gmail.com</p> </span>
        <p id="p3">The code consists of 6 digits containing letters <br> and numbers and is valid for 10 minutes.</p>
-            <input type="number" maxlength="1" min="0" max="9"  class="in">  
-            <input type="number" maxlength="1" min="0" max="9"  class="in"> 
-            <input type="number" maxlength="1" min="0" max="9"  class="in"> 
-            <input type="number" maxlength="1" min="0" max="9"  class="in">
-            <input type="number" maxlength="1" min="0" max="9"  class="in">
-            <input type="number" maxlength="1" min="0" max="9"  class="in"> <br>
+            <input type="text" maxlength="1" class="in">  
+            <input type="text" maxlength="1" class="in"> 
+            <input type="text" maxlength="1" class="in"> 
+            <input type="text" maxlength="1" class="in">
+            <input type="text" maxlength="1" class="in">
+            <input type="text" maxlength="1" class="in"> <br>
             <input type="button" id="submit" value="verify" class="btn" > </div>
         </form>
     </div>
-     
+    <div id="customConfirm" class="modal">
+        <div class="modal-content">
+        <p>هل  ترغب في حفظ التعديلات ؟</p>
+        <br><br> <button id="yesButton">نعم</button>
+        <br><br> <button id="noButton">لا</button>
+        </div>
+    </div>
+     <script>
+    let darkmood = localStorage.getItem("dark-mood");
+    const themeswitch = document.getElementById("theme-switch");
+    const enableDarkmood = ()=>{
+        document.body.classList.add('dark-mood');
+        localStorage.setItem('dark-mood' , 'active')
+    }
+    const disableDarkmood= ()=>{
+        document.body.classList.remove('dark-mood');
+        localStorage.setItem('dark-mood' , null)
+    }
+     if(darkmood==="active") enableDarkmood()
+    themeswitch.addEventListener("click", ()=>{
+        darkmood = localStorage.getItem('dark-mood')
+        darkmood !== "active" ? enableDarkmood() : disableDarkmood()
+    }) 
+    
+    const translations = {
+    en: {
+        l1:"Inter Code",
+        p1:"The verification code has been sent to your email",
+        p3:"The code consists of 6 digits containing letters  and numbers and is valid for 10 minutes.",
+        btn:"verify"
+    },
+    ar: {
+        l1: "ادخل الرمز",
+        p1:"لقد تم إرسال رمز التحقق إلى بريدك الإلكتروني",
+        p3:"يتكون الرمز من 6 أرقام تحتوي على الأحرف والأرقام ويكون صالحًا لمدة 10 دقائق.",
+        btn:"التحقق"
+    },
+    fr: {
+        l1: "Inter-code",
+        p1:"Le code de vérification a été envoyé à votre adresse e-mail",
+        p3:"Le code est composé de 6 chiffres contenant des lettres et des chiffres et est valable 10 minutes.",
+        btn:"vérifier"
+    }, 
+     gr: {
+        l1: "Intercode",
+        p1:"Der Bestätigungscode wurde an Ihre E-Mail gesendet",
+        p3:"Der Code besteht aus 6 Ziffern, bestehend aus Buchstabe und Zahlen und ist 10 Minuten gültig.",
+        btn:"verifizieren"
+    }
+};
+
+function changeLanguage(language) {
+    // login
+    document.getElementById("l1").innerText = translations[language].l1;
+    document.getElementById("p1").innerText = translations[language].p1;
+    document.getElementById("submit").value = translations[language].btn;
+    document.getElementById("p3").innerText= translations[language].p3;
+   
+    // if(language === 'ar'){
+    //     document.getElementById("p").style.textAlign='right';
+    //     document.getElementById("phone").style.textAlign='right';
+    //     document.getElementById("email").style.textAlign='right';
+    // }else{
+    //     document.getElementById("p").style.textAlign='left';
+    //     document.getElementById("phone").style.textAlign='left';
+    //     document.getElementById("email").style.textAlign='left';
+    // }
+
+  
+    localStorage.setItem('selectedLanguage', language);
+}
+window.onload= function(event) {
+    document.getElementById('customConfirm').style.display = 'block';
+    
+};
+
+document.getElementById('yesButton').onclick = function() {
+    
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en'; 
+    
+    changeLanguage(savedLanguage);
+    
+    
+    document.getElementById("language-select").value = savedLanguage;
+
+    document.getElementById('customConfirm').style.display = 'none';
+ 
+ 
+};
+
+document.getElementById('noButton').onclick = function() {
+    document.getElementById('customConfirm').style.display = 'none';
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en'; 
+    document.body.classList.remove('dark-mood');   
+
+};
+
+window.onclick = function(event) {
+    const modal = document.getElementById('customConfirm');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+};
+
+     </script>
 </body>
 </html>

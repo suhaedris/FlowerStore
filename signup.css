@@ -5,10 +5,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: linear-gradient(108.81deg, #7C8761 -21.51%, #80AF81 36.42%, rgba(26, 83, 25, 0.9) 87.8%);
+    --secondary-color:linear-gradient(180deg, #508D4E -14.81%, #161313 100%); 
+    --third-color:#FFFFFF1A; 
+    --forth-color: #1A5319;
+   
+    
+}
+.dark-mood{
+    --primary-color: linear-gradient(108.81deg, #222222 -21.51%, #243024 36.42%, rgba(0, 0, 0, 0.9) 87.8%);
+    --secondary-color:linear-gradient(180deg, #ffffffcb -14.81%, #158b1f6c 100%);
+    --third-color: #04240b93;
+    --forth-color:#fff;
+}
 body{
     margin-top: 50px;
     margin-left: 50px;
-    background: linear-gradient(108.81deg, #7C8761 -21.51%, #80AF81 36.42%, rgba(26, 83, 25, 0.9) 87.8%);
+    background: var(--primary-color);
     display: flex;
 }
 .container{
@@ -17,8 +31,6 @@ body{
     padding: 10px 30px;
     margin-top: 90px;
     margin-left: 400px;
-    /* width: 600px;
-    height: 490px; */
     width: 700px;
     height: 490px;
     justify-content: center;
@@ -28,7 +40,7 @@ body{
     border: 1px solid #F1F1F17A;
     box-shadow: -47.43px 47.43px 47.43px #FFFFFF1A inset;
     box-shadow: 47.43px -47.43px 47.43px #C2C2C21A inset;
-    background: #FFFFFF1A;
+    background:var(--third-color);
     backdrop-filter: blur(10px);
     z-index: 1;
     animation: slide 0.6s ease-out;
@@ -50,15 +62,15 @@ body{
     object-fit: cover;
     animation: slide1 0.6s ease-out;
 }
-#l1{
-    width: 160px;
+#si{
+    width: auto;
+    height: 64px;
     margin-bottom: 6px;
-    margin-left: 120px;
     font-size: 36px;
     font-weight: 800;
     line-height: 54px;
     text-align: center;
-    background: linear-gradient(180deg, #508D4E 0%, #161515 74.07%);
+    background:var(--secondary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -74,13 +86,39 @@ h3{
     top: 172px;
     left: 156px;
 }
+select {
+    position: fixed;
+    right: 20%;
+    top: 10%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background:var(--third-color);
+    backdrop-filter: blur(60px);
+    color: var(--forth-color);
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: rgb(190, 190, 190);
+    color: #1A5319;
+}
+
+select:focus {
+    outline: none;
+    border-color: #1A5319;
+    box-shadow: 0 0 5px #1A5319;;
+}
 .in{
     margin: 5px;
     padding: 5px;
     width: 180px;
     position: relative;
     border: none;
-    border-bottom: 1px solid #1A5319;
+    border-bottom: 1px solid var(--forth-color);
     outline: none; /* إزالة التأثير عند التركيز */
     background: none; 
     font-family: "Poppins";
@@ -136,13 +174,99 @@ h3{
         line-height: 24px;
         text-align: left;
         text-decoration: none;
-        color: #1A5319;
+        color: var(--forth-color);
     }
 #img2{
     position: relative;
     width: 120px;
     height: 140px;
     top: -1px;
+}
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border-color: #D6EFD8;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10%;
+    top: 9%;
+}
+#theme-switch svg{
+    fill: var(--third-color);
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.dark-mood #theme-switch svg:first-child{
+    display: none;
+}
+.dark-mood #theme-switch svg:last-child{
+    display: block;
+    fill: white;
+}
+#customConfirm{
+    display: none;
+    position: relative;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 449px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+    left: 80%;
+    top:20%;
+    background-color: rgba(256, 256, 256, 0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+} 
+#customConfirm p{
+    position: relative;
+    clear: both;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    padding-top: 25px;
+    padding-bottom: 0;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #80AF81;
+}
+#yesButton{
+    clear: both;
+    font-family: "Poppins";
+    color: white;
+    font-size: 18px;
+    width: 276px;
+    height: 50px;
+    margin-top: 0;
+    padding: 10px 0px 10px 0px;
+    border-radius: 45px;
+    border: 1px;
+    background: #7C8761AB;
+    border: 1px solid #FCFCFC;
+    cursor: pointer;   
+}
+#noButton{
+    height: 30px;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    background: #7C8761A1;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    clear: both;
+    border: none;
+    cursor: pointer; 
 }
 @keyframes slide {
     from {
@@ -165,20 +289,32 @@ h3{
         margin:30px;
 
     }
+    .container{
+        position: relative;
+        left: -20%;
+    }
     h3{
         font-size: 32px;
+    }
+    #icon{
+        width: 5%;
     }
     .box{
         width:90%;
         margin-left: 0;
+        justify-content: center;
+        align-items: center;
     }
     .container{
         width: 100%;
         margin-left: 0;
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+        left: -15%;
     }
     #l1{
-        margin-left: 20%;
-        font-size: 28px;
+        font-size: 30px;
     }
     #img1{
         display: none;
@@ -194,5 +330,27 @@ h3{
         width: 70%;
         font-size: 16px;
     }
+    #customConfirm {
+        width: 70%;
+        left: 5%;
+        top:10%;
+        z-index: 8;
+    }
+    #yesButton{
+        width: 50%;
+        font-size: 16px;
+    }
+    #customConfirm p{
+        font-size: 14px;
+     }
+     select{
+        width: 8%;
+        height: 4%;
+     }
+     #theme-switch{
+        width: 7%;
+        height: 4%;
+        margin-left: 10px;
+     }
 }
 
