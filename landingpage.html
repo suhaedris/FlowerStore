@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lan.css">
+    <title>Landing Page</title>
+</head>
+<body>
+  <div class="styl"></div>
+    <section id="logo">
+   
+        <!-- <div class="container"> -->
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg navbar-dark n1 ">
+            <a class="navbar-brand l1 "href="" id="l2">logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto n" >
+              <li class="nav-item">
+                <a class="nav-link" href="#logo">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About Us</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#products" >products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#our-services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus">Contact us</a>
+              </li>
+            </ul>
+            <ul  class="navbar-nav ms-auto n2 ">
+                <li class="nav-item">
+          <a class="nav-link" href="#cta"> <svg width="18" height="18"width="60%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="bi ">
+            <path d="M13.92 13.92L17 17M16.111 8.581C16.111 12.768 12.728 16.162 8.556 16.162C4.383 16.162 1 12.768 1 8.582C1 4.393 4.383 1 8.555 1C12.728 1 16.111 4.394 16.111 8.581Z" stroke="#D6EFD8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cta"><svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.45851 1.51494C2.14674 2.12239 1.18605 3.56811 1.18605 5.29191C1.18605 7.05257 1.89767 8.41013 2.91609 9.57376C3.7566 10.5322 4.77344 11.3272 5.76498 12.1014C6.00061 12.2857 6.23465 12.4692 6.46474 12.6527C6.88065 12.9853 7.25149 13.2762 7.60967 13.4886C7.96707 13.7001 8.25488 13.7971 8.5 13.7971C8.74512 13.7971 9.03293 13.7009 9.39033 13.4886C9.74851 13.2762 10.1193 12.9853 10.5353 12.6527C10.7646 12.4684 10.9994 12.2857 11.235 12.1022C12.2266 11.3264 13.2434 10.5322 14.0839 9.57376C15.1031 8.41013 15.814 7.05257 15.814 5.29191C15.814 3.56891 14.8533 2.12239 13.5415 1.51494C12.2669 0.92431 10.5542 1.08058 8.92698 2.79476C8.87166 2.85294 8.80534 2.8992 8.73197 2.93081C8.65861 2.96241 8.57971 2.9787 8.5 2.9787C8.42029 2.9787 8.34139 2.96241 8.26803 2.93081C8.19467 2.8992 8.12834 2.85294 8.07302 2.79476C6.44577 1.08058 4.73312 0.92431 3.45851 1.51494ZM8.5 1.54379C6.67191 -0.115098 4.62479 -0.347503 2.96512 0.421035C1.21451 1.23445 0 3.11933 0 5.29271C0 7.42843 0.877674 9.05846 2.02972 10.3727C2.95167 11.425 4.08 12.3057 5.07707 13.0831C5.30321 13.2594 5.52223 13.4309 5.73019 13.5976C6.13581 13.9213 6.5707 14.2659 7.01112 14.5272C7.45153 14.7876 7.95442 15 8.5 15C9.04558 15 9.54847 14.7876 9.98888 14.5272C10.4301 14.2659 10.8642 13.9213 11.2698 13.5976C11.4864 13.4246 11.7041 13.2531 11.9229 13.0831C12.9192 12.3057 14.0483 11.4242 14.9703 10.3727C16.1223 9.05846 17 7.42843 17 5.29271C17 3.11933 15.7863 1.23445 14.0349 0.422637C12.3752 -0.346701 10.3281 -0.114297 8.5 1.54379Z" fill="#D6EFD8"/>
+              </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cta"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.42857 3.75643H18L16.1786 11.8182H5.25M16.1786 14.2988H5.85714L2.82143 1.27588H1" stroke="#D6EFD8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.9643 18.0196C15.6349 18.0196 16.1786 17.4643 16.1786 16.7793C16.1786 16.0944 15.6349 15.5391 14.9643 15.5391C14.2937 15.5391 13.75 16.0944 13.75 16.7793C13.75 17.4643 14.2937 18.0196 14.9643 18.0196Z" stroke="#D6EFD8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.07171 18.0196C7.74234 18.0196 8.28599 17.4643 8.28599 16.7793C8.28599 16.0944 7.74234 15.5391 7.07171 15.5391C6.40108 15.5391 5.85742 16.0944 5.85742 16.7793C5.85742 17.4643 6.40108 18.0196 7.07171 18.0196Z" stroke="#D6EFD8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></a>
+        </li>
+        <li class="nav-item">   <select id="language-select" class="sel" onchange="changeLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+      </select></li>
+      <li class="nav-item">
+        <button id="theme-switch" class="sel" >
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"  class="bi ">
+            <path d="M32.8417 20.0012C32.6973 19.8566 32.5164 19.754 32.3182 19.7044C32.12 19.6549 31.912 19.6602 31.7167 19.7199C29.5715 20.3684 27.2906 20.4228 25.117 19.8773C22.9434 19.3317 20.9586 18.2067 19.3739 16.622C17.7893 15.0374 16.6642 13.0525 16.1187 10.8789C15.5731 8.70533 15.6275 6.42444 16.276 4.27931C16.3362 4.08384 16.342 3.87567 16.2927 3.67717C16.2434 3.47867 16.141 3.29737 15.9963 3.15275C15.8517 3.00813 15.6704 2.90567 15.4719 2.85639C15.2734 2.80711 15.0652 2.81287 14.8698 2.87306C11.904 3.78156 9.30038 5.6023 7.42931 8.07618C5.79301 10.2486 4.79492 12.8343 4.54715 15.5428C4.29938 18.2512 4.81176 20.9751 6.02673 23.4084C7.24169 25.8417 9.1111 27.8879 11.4249 29.3174C13.7388 30.7468 16.4053 31.5026 19.1251 31.5001C22.2981 31.5098 25.3866 30.4783 27.917 28.5638C30.3908 26.6928 32.2116 24.0891 33.1201 21.1234C33.1796 20.9286 33.1851 20.7214 33.1361 20.5238C33.087 20.3261 32.9853 20.1455 32.8417 20.0012ZM26.5641 26.7667C24.1813 28.5614 21.2304 29.435 18.2545 29.2266C15.2787 29.0183 12.4783 27.7419 10.3688 25.6326C8.25938 23.5234 6.98285 20.723 6.77424 17.7472C6.56562 14.7714 7.43898 11.8204 9.23353 9.43743C10.4027 7.89346 11.9142 6.64188 13.6492 5.78118C13.5503 6.47478 13.5005 7.17449 13.5001 7.87509C13.5042 11.7526 15.0463 15.4702 17.7882 18.212C20.53 20.9538 24.2476 22.496 28.1251 22.5001C28.8271 22.4999 29.5282 22.4501 30.2232 22.351C29.3617 24.0863 28.1092 25.5978 26.5641 26.7667Z" fill="#4C5537"/>
+            </svg>
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1735_1119)">
+        <path d="M18 6.31016C18.2652 6.31016 18.5196 6.2048 18.7071 6.01726C18.8946 5.82973 19 5.57537 19 5.31016V1.91016C19 1.64494 18.8946 1.39059 18.7071 1.20305C18.5196 1.01551 18.2652 0.910156 18 0.910156C17.7348 0.910156 17.4804 1.01551 17.2929 1.20305C17.1054 1.39059 17 1.64494 17 1.91016V5.31016C17 5.57537 17.1054 5.82973 17.2929 6.01726C17.4804 6.2048 17.7348 6.31016 18 6.31016Z" fill="white"/>
+        <path d="M18 29.6899C17.7348 29.6899 17.4804 29.7953 17.2929 29.9828C17.1054 30.1704 17 30.4247 17 30.6899V34.0899C17 34.3552 17.1054 34.6095 17.2929 34.797C17.4804 34.9846 17.7348 35.0899 18 35.0899C18.2652 35.0899 18.5196 34.9846 18.7071 34.797C18.8946 34.6095 19 34.3552 19 34.0899V30.6899C19 30.4247 18.8946 30.1704 18.7071 29.9828C18.5196 29.7953 18.2652 29.6899 18 29.6899Z" fill="white"/>
+        <path d="M8.32014 9.74014C8.50609 9.90917 8.74886 10.002 9.00014 10.0001C9.13175 10.0009 9.26221 9.97568 9.38405 9.92592C9.50589 9.87615 9.6167 9.80283 9.71014 9.71014C9.80387 9.61718 9.87827 9.50658 9.92904 9.38472C9.9798 9.26286 10.0059 9.13216 10.0059 9.00014C10.0059 8.86813 9.9798 8.73743 9.92904 8.61557C9.87827 8.49371 9.80387 8.38311 9.71014 8.29014L7.33014 5.92014C7.13884 5.75632 6.89277 5.67071 6.64109 5.68043C6.38942 5.69015 6.15068 5.79449 5.97258 5.97258C5.79449 6.15068 5.69015 6.38942 5.68043 6.64109C5.67071 6.89277 5.75632 7.13884 5.92014 7.33014L8.32014 9.74014Z" fill="white"/>
+        <path d="M27.6799 26.2599C27.5867 26.1667 27.476 26.0927 27.3542 26.0423C27.2323 25.9918 27.1018 25.9658 26.9699 25.9658C26.8381 25.9658 26.7075 25.9918 26.5857 26.0423C26.4638 26.0927 26.3532 26.1667 26.2599 26.2599C26.1667 26.3532 26.0927 26.4638 26.0423 26.5857C25.9918 26.7075 25.9658 26.8381 25.9658 26.9699C25.9658 27.1018 25.9918 27.2323 26.0423 27.3542C26.0927 27.476 26.1667 27.5867 26.2599 27.6799L28.6699 30.0799C28.7625 30.1744 28.873 30.2496 28.9948 30.3011C29.1167 30.3526 29.2476 30.3794 29.3799 30.3799C29.6437 30.3762 29.8953 30.2683 30.0799 30.0799C30.2662 29.8925 30.3707 29.6391 30.3707 29.3749C30.3707 29.1107 30.2662 28.8573 30.0799 28.6699L27.6799 26.2599Z" fill="white"/>
+        <path d="M6.31016 18C6.31016 17.7348 6.2048 17.4804 6.01726 17.2929C5.82973 17.1054 5.57537 17 5.31016 17H1.91016C1.64494 17 1.39059 17.1054 1.20305 17.2929C1.01551 17.4804 0.910156 17.7348 0.910156 18C0.910156 18.2652 1.01551 18.5196 1.20305 18.7071C1.39059 18.8946 1.64494 19 1.91016 19H5.31016C5.57537 19 5.82973 18.8946 6.01726 18.7071C6.2048 18.5196 6.31016 18.2652 6.31016 18Z" fill="white"/>
+        <path d="M34.0904 17H30.6904C30.4252 17 30.1709 17.1054 29.9833 17.2929C29.7958 17.4804 29.6904 17.7348 29.6904 18C29.6904 18.2652 29.7958 18.5196 29.9833 18.7071C30.1709 18.8946 30.4252 19 30.6904 19H34.0904C34.3556 19 34.61 18.8946 34.7975 18.7071C34.9851 18.5196 35.0904 18.2652 35.0904 18C35.0904 17.7348 34.9851 17.4804 34.7975 17.2929C34.61 17.1054 34.3556 17 34.0904 17Z" fill="white"/>
+        <path d="M8.31983 26.2599L5.91983 28.6699C5.77941 28.8092 5.68344 28.987 5.64405 29.1808C5.60467 29.3746 5.62364 29.5757 5.69856 29.7588C5.77349 29.9418 5.90101 30.0985 6.06499 30.2091C6.22897 30.3196 6.42206 30.3791 6.61983 30.3799C6.75214 30.3794 6.88302 30.3526 7.0049 30.3011C7.12677 30.2496 7.23722 30.1744 7.32983 30.0799L9.73983 27.6799C9.92813 27.4916 10.0339 27.2362 10.0339 26.9699C10.0339 26.7036 9.92813 26.4482 9.73983 26.2599C9.55153 26.0716 9.29613 25.9658 9.02983 25.9658C8.76353 25.9658 8.50813 26.0716 8.31983 26.2599Z" fill="white"/>
+        <path d="M26.9999 9.99991C27.1315 10.0007 27.262 9.97545 27.3838 9.92568C27.5057 9.87592 27.6165 9.8026 27.7099 9.70991L30.1099 7.29991C30.2962 7.11255 30.4007 6.8591 30.4007 6.59491C30.4007 6.33073 30.2962 6.07728 30.1099 5.88991C29.9226 5.70366 29.6691 5.59912 29.4049 5.59912C29.1408 5.59912 28.8873 5.70366 28.6999 5.88991L26.2899 8.28991C26.1962 8.38288 26.1218 8.49348 26.071 8.61534C26.0203 8.7372 25.9941 8.8679 25.9941 8.99991C25.9941 9.13193 26.0203 9.26263 26.071 9.38449C26.1218 9.50635 26.1962 9.61695 26.2899 9.70991C26.3834 9.8026 26.4942 9.87592 26.616 9.92568C26.7379 9.97545 26.8683 10.0007 26.9999 9.99991Z" fill="white"/>
+        <path d="M18.1301 7.74986C16.1213 7.72408 14.1501 8.2962 12.4672 9.39351C10.7843 10.4908 9.46574 12.0638 8.67905 13.9123C7.89236 15.7609 7.67311 17.8017 8.04918 19.7752C8.42524 21.7487 9.37963 23.5659 10.791 24.9956C12.2024 26.4254 14.0071 27.4031 15.9756 27.8046C17.944 28.2062 19.9875 28.0133 21.8461 27.2506C23.7047 26.4878 25.2945 25.1896 26.4135 23.5211C27.5324 21.8525 28.13 19.8889 28.1301 17.8799C28.1434 15.2116 27.0983 12.647 25.2238 10.7481C23.3492 8.84919 20.7983 7.771 18.1301 7.74986ZM18.1301 25.9999C16.5164 26.0257 14.9316 25.5706 13.5774 24.6927C12.2232 23.8147 11.161 22.5536 10.526 21.0699C9.89092 19.5862 9.71184 17.9471 10.0115 16.3613C10.3112 14.7755 11.0761 13.3147 12.2087 12.1651C13.3414 11.0154 14.7906 10.2289 16.3717 9.90564C17.9529 9.58239 19.5945 9.73705 21.0875 10.3499C22.5805 10.9628 23.8573 12.0062 24.7553 13.3471C25.6533 14.6881 26.1319 16.266 26.1301 17.8799C26.1408 20.0159 25.3052 22.0693 23.806 23.591C22.3068 25.1126 20.2661 25.9787 18.1301 25.9999Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_1735_1119">
+        <rect width="36" height="36" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+    </button>
+      </li>
+      <li class="nav-item"> <input class="btn sel" type="button" value="logout" id="btn" onclick="popup()"></li>
+        </ul>
+          </div>
+          </nav> 
+         <!-- </div> -->
+         <div class="row">
+          <div class="col-lg-6">
+          <div class="title">  <div class="line"></div> <h6 id="title">ARTEFICILAL FLOWERS</h6>
+         <h1  class="big-heading" >unique flowers delivered to your dooretep </h1>
+         <p class="p1" >owalos provide artificial handmade flowers to make your home beautiful </p>
+        <input class="btn2" type="button" value="shop now">
+        </div> 
+        <div class="cont">  
+      <div class="line1"> <p>10 M <br> product sold</p></div>
+        
+      <div class="line1"><p>260 K <br>send gifts last year</p></div>
+
+      <div class="line1"><p>95 % <br>happy customers</p></div>
+
+        </div> 
+        <div class="cont1">
+            <button type="button" class="btn3 btn-dark btn-lg downlaod-button"><svg width="35" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.1617 33.5958C26.9002 35.4427 24.4311 35.1511 22.0542 34.2762C19.5389 33.3819 17.2313 33.343 14.5775 34.2762C11.2545 35.4816 9.50069 35.1317 7.51613 33.5958C-3.7451 23.8164 -2.08361 8.92387 10.7007 8.3795C13.816 8.51559 15.9851 9.8182 17.8082 9.93486C20.5312 9.46825 23.1388 8.12675 26.0464 8.30173C29.5309 8.53503 32.1616 9.70155 33.8923 11.8013C26.6925 15.4369 28.4002 23.4276 35 25.6634C33.6847 28.5797 31.977 31.4766 29.1386 33.6152L29.1617 33.5958ZM17.5774 8.26285C17.2313 3.92728 21.4081 0.349956 26.2079 0C26.8771 5.01603 20.8081 8.7489 17.5774 8.26285Z" fill="white"/>
+              </svg>
+              <p>   available on the
+                <span id="sp">App Store</span></p>
+           </button>
+            <button type="button" class="btn3 btn-outline-light btn-lg downlaod-button"><svg width="25" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_660_107)">
+              <path d="M18.6801 19.0695L0.165527 36.6165C0.373444 37.283 0.747076 37.8977 1.25786 38.4136C1.76865 38.9295 2.40307 39.3329 3.11262 39.593C3.82217 39.8531 4.58807 39.963 5.35178 39.9143C6.11548 39.8656 6.85676 39.6596 7.51896 39.312L28.3513 28.5793L18.6801 19.0695Z" fill="#EA4335"/>
+              <path d="M37.4016 16.0868L28.393 11.4191L18.2527 19.4685L28.4342 28.5541L37.3742 23.9364C38.1662 23.5612 38.8296 22.9972 39.2924 22.3053C39.7553 21.6135 40 20.8202 40 20.0115C40 19.2028 39.7553 18.4096 39.2924 17.7177C38.8296 17.0258 38.1662 16.4618 37.3742 16.0866L37.4016 16.0868Z" fill="#FBBC04"/>
+              <path d="M0.165429 3.3197C0.0535844 3.69397 -0.00212299 4.08014 -0.000195802 4.46783V35.4681C0.000908585 35.8557 0.0565645 36.2415 0.165429 36.6164L19.3146 19.5187L0.165429 3.3197Z" fill="#4285F4"/>
+              <path d="M18.818 19.9681L28.3927 11.4192L7.58803 0.636475C6.80526 0.221804 5.91499 0.00219444 5.00787 8.6686e-06C2.75678 -0.00394893 0.777715 1.34757 0.165527 3.30729L18.818 19.9681Z" fill="#34A853"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_660_107">
+              <rect width="40" height="40" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              <p>git it on <br>
+                <span id="sp">Google Play</span> </p> </button>
+          </div>
+        </div>
+          <div class="col-lg-6">
+            <img class="img1" src="img/Group 20.png" alt="iphone-mockup">
+          </div>
+          </div>
+        </div>  
+         </section>
+         <section id="About">
+          <div class="container">
+            <h1 id="a"> ABOUT US</h1>
+            <h3>THIS SITE FOR THOSE WHO ADMIRE THE BEAUTY AND HARMONY OF NATURE</h3>
+          </div>
+          <div class="row ">
+            <div class="col-lg-4">
+              <div class="card"> 
+                <img id="cimg" src="img/Vector (7).svg" alt="">
+                <h3 id="l">LARGE ASSORTMENT</h3>
+                <p>we offer our customers more than 15.000
+                  items of natural and artiificial flower, tress and
+                  many accessories for floristry </p>
+              </div> </div>
+            <div class="col-lg-4">
+              <div class="card"> 
+                <img id="cimg"  src="img/Vector (8).svg" alt="">
+                <h3 id="l">FREE&FAST SHIPPING</h3>
+                <p>we will ship your goods after receipt 
+                  of founds to the current a ccount, choose
+                   the most convenient from the offerd 
+                  delivery option</p>
+              </div></div>
+            <div class="col-lg-4">
+              <div class="card"> 
+                <img id="cimg"  src="img/Vector (9).svg" alt="">
+               <h3 id="l">24/7 SUPPORT</h3>
+                <p>we work seven days a week  and a lunch
+                  break,we willbe glad to welcome you as our
+                  buyer and thank you for your trust in ue  </p>   
+              </div>
+              </div></div>
+            </section>
+            <section id="offer">
+              <div class="offer">
+                <div class="op">
+                  <svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M73 35.9624C73 35.1297 72.5882 34.3977 71.9615 33.9386L71.9748 33.916L63.1483 28.8514L68.2289 20.1052L68.2119 20.0948C68.3721 19.7343 68.4447 19.3413 68.4238 18.9478C68.4029 18.5542 68.2891 18.171 68.0917 17.8292C67.8923 17.488 67.6149 17.1983 67.2818 16.9835C66.9488 16.7687 66.5695 16.6349 66.1747 16.5929V16.5685H55.9813V6.46651H55.9605C55.9179 6.07465 55.7831 5.69827 55.567 5.36778C55.3509 5.0373 55.0596 4.76198 54.7166 4.56409C54.3724 4.36682 53.986 4.25332 53.5892 4.23288C53.1923 4.21244 52.7963 4.28564 52.4333 4.44649L52.421 4.42485L43.446 9.5751L38.4761 1.01895L38.4581 1.0293C38.224 0.711143 37.9179 0.452194 37.5645 0.273385C37.2111 0.0945758 36.8204 0.000924135 36.4238 0C35.586 0 34.8486 0.409272 34.3876 1.03212L34.3649 1.01895L29.3127 9.71623L20.613 4.72404L20.6026 4.74192C20.2399 4.58271 19.8445 4.51058 19.4485 4.53133C19.0525 4.55209 18.667 4.66516 18.3231 4.86141C17.9796 5.05946 17.6879 5.33517 17.4716 5.66618C17.2554 5.9972 17.1206 6.3742 17.0783 6.76664H17.0527V16.8093H7.00702V16.8291C6.61275 16.8715 6.23406 17.0055 5.90154 17.2202C5.56902 17.435 5.29201 17.7245 5.09291 18.0654C4.89531 18.4075 4.78154 18.791 4.76081 19.185C4.74009 19.5789 4.813 19.9721 4.97364 20.3329L4.95186 20.346L9.91793 28.8956L1.02521 33.9988L1.03562 34.0167C0.715513 34.2493 0.454974 34.5536 0.275066 34.9048C0.0951578 35.2561 0.000929814 35.6444 0 36.0386C0 36.8712 0.411788 37.6042 1.03846 38.0624L1.02521 38.0849L9.85166 43.1496L4.77106 51.8958L4.7881 51.9052C4.62791 52.2657 4.55533 52.6587 4.57622 53.0522C4.5971 53.4458 4.71087 53.829 4.90832 54.1708C5.1077 54.512 5.38515 54.8017 5.71819 55.0165C6.05123 55.2313 6.4305 55.3651 6.82526 55.4071V55.4325H17.0177V65.5335H17.0385C17.1256 66.3012 17.5582 67.0201 18.2824 67.4359C18.6269 67.6325 19.0132 67.7455 19.4099 67.766C19.8066 67.7864 20.2026 67.7136 20.5657 67.5535L20.578 67.5751L29.5531 62.4249L34.5229 70.9811L34.5409 70.9707C34.775 71.2889 35.0811 71.5478 35.4345 71.7266C35.7879 71.9054 36.1787 71.9991 36.5753 72C37.413 72 38.1505 71.5907 38.6115 70.9688L38.6333 70.9811L43.6855 62.2838L52.386 67.276L52.3964 67.2581C52.7592 67.4173 53.1545 67.4894 53.5505 67.4687C53.9465 67.4479 54.332 67.3348 54.6759 67.1386C55.0199 66.9411 55.312 66.6656 55.5284 66.3344C55.7447 66.0033 55.8792 65.626 55.9208 65.2334H55.9463V55.1916H65.993V55.1718C66.3872 55.1295 66.7659 54.9955 67.0985 54.7807C67.431 54.5659 67.708 54.2764 67.9071 53.9356C68.1047 53.5935 68.2185 53.2099 68.2392 52.816C68.2599 52.422 68.187 52.0288 68.0264 51.6681L68.0481 51.6559L63.0821 43.1063L71.9748 38.0031L71.9644 37.9852C72.2846 37.7525 72.5452 37.4481 72.7252 37.0967C72.9051 36.7452 72.9992 36.3567 73 35.9624ZM24.7016 50.2982C22.5906 51.51 20.6765 51.6756 19.0492 51.2409L19.2773 48.7034C20.5099 49.0581 22.1031 49.0563 23.6082 48.1916C24.9023 47.4493 25.1777 46.531 24.8095 45.8978C23.7123 44.0105 18.1906 48.9368 15.8174 44.8525C14.7685 43.0461 15.47 40.646 18.042 39.1707C19.7772 38.1743 21.5209 37.8695 23.1784 38.2411L22.8859 40.709C21.5294 40.4042 20.1331 40.7052 19.0199 41.3431C18.0372 41.9076 17.7258 42.65 18.1045 43.302C19.0975 45.0106 24.6978 40.2574 27.0511 44.3078C28.2051 46.292 27.6343 48.6169 24.7016 50.2982ZM37.9006 42.4646L36.1455 41.0204L31.4625 43.7075L31.8421 45.9411L29.2057 47.453L27.1089 34.1841L30.0236 32.5122L40.5369 40.9527L37.9006 42.4646ZM41.4533 40.4267L35.1477 29.5711L37.4897 28.2266L42.6139 37.0472L47.2316 34.3977L48.4139 36.4328L41.4533 40.4267ZM49.9844 35.5315L43.6788 24.6768L51.4072 20.2407L52.5886 22.2748L47.1861 25.3758L48.5095 27.6546L53.7974 24.6194L54.9789 26.6535L49.6909 29.6878L51.1279 32.1622L56.5313 29.0612L57.7137 31.0953L49.9844 35.5315Z" fill="#7C8761"/>
+                    </svg>                    
+                  <img id="opimg" src="img/Rectangle 61.png" alt="">
+                  <div> <h2>LIMITED OFFER</h2>
+                    <h1 >35% OFF ONLY THIS FRAIDAY AND GIT SPECIAL GIFT</h1>
+                    <button onclick="window.location.href='offer.html'" id="login">grap it now &nbsp; <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z" fill="white"/>
+                      </svg>
+                      </button></div>
+              
+                </div>
+              </div>
+            </section>
+         
+         <!-- services -->
+
+         <section id="our-services">
+            
+            <h1 id="a"> OUR SERVICES</h1>
+            <div id="opt"></div>
+            <div class="row row1">
+            <div class="ser col-lg-4">
+              <img id="im1" src="img/Frame 41.png" alt="">
+              <h2 id="sl">SELLING FLOWER BOUQUETS</h2>
+              <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z" fill="#7C8761"/>
+                </svg>
+            </div>
+
+            <div class="ser1 col-lg-4">
+              <img id="im1" src="img/Frame 39.png" alt="">
+              <h2 id="sl">SELLING <br> HOUSEPLANTS</h2>
+              <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z" fill="#7C8761"/>
+                </svg>
+            </div>
+
+            <div class="ser col-lg-4">
+              <img id="im1" src="img/Frame 38.png" alt="">
+              <h2 id="sl">PACKAGING <br> SERVICE</h2>
+              <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z" fill="#7C8761"/>
+                </svg>
+            </div>
+
+            <div class="ser2 col-lg-4">
+              <img id="im1" src="img/Frame 40.png" alt="">
+              <h2 id="sl">DELIVERY <br> SERVICE</h2>
+              <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z" fill="#7C8761"/>
+                </svg>
+            </div>
+          </div>
+         </section>
+
+         <!-- products -->
+          <section id="products">
+            <h1 id="a"> OUR PRODUCTS</h1>
+            <div class="row row3">
+              <div class="d col-lg-4">
+                <img src="img/Rectangle 31.png" alt="">
+                <button id="see">see more</button>
+                <span id="names">
+                <h4>Succulents</h4>
+                <p>30.00$</p>
+                <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></button>
+                </span>
+                </div>
+              <div class=" d col-lg-4">
+                <img src="img/Rectangle 36.png" alt="">
+                <button id="see">see more</button>
+                <span id="names">
+                  <h4>Bromeliads</h4>
+                  <p>50.00$</p>
+                  <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></button>
+                </span>
+                </div>
+               <div class="d col-lg-4">
+                <img src="img/Rectangle 34.png" alt="">
+                <button id="see">see more</button>
+                <span id="names">
+                <h4>Calathea</h4>
+                  <p>20.00$</p>
+                  <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></button>
+                    </span>
+              </div>
+               <div class=" d col-lg-4">
+                <img src="img/Rectangle 35.png" alt="">
+                <button id="see">see more</button>
+                <span id="names">
+                <h4>Croton</h4>
+                  <p>40.00$</p>
+                  <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></button>
+                    </span>
+                    </div>
+              </div>
+          
+            
+            <!-- <div id="carouselExampleCaptions" class="carousel slide ">
+              <div class="carousel-indicators bt">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner cr  ">
+                <div class="carousel-item active ">
+                   <div class="row3">
+                      <div class="d ">
+                        <img src="img/Rectangle 31.png" alt="">
+                        <button id="see">see more</button>
+                        <span id="names">
+                        <h4>Succulents</h4>
+                        <p>30.00$</p>
+                        <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                        </span>
+                        </div>
+                      <div class=" d1">
+                        <img src="img/Rectangle 36.png" alt="">
+                        <button id="see">see more</button>
+                        <span id="names">
+                          <h4>Bromeliads</h4>
+                          <p>50.00$</p>
+                          <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
+                        </span>
+                        </div>
+                       <div class="d2">
+                        <img src="img/Rectangle 34.png" alt="">
+                        <button id="see">see more</button>
+                        <span id="names">
+                        <h4>Calathea</h4>
+                          <p>20.00$</p>
+                          <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
+                            </span>
+                      </div>
+                       <div class=" d3">
+                        <img src="img/Rectangle 35.png" alt="">
+                        <button id="see">see more</button>
+                        <span id="names">
+                        <h4>Croton</h4>
+                          <p>40.00$</p>
+                          <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
+                            </span>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+                <div class="carousel-inner cr  ">
+                <div class="carousel-item ">
+                  <div class="row2">
+                    <div class="d">
+                      <img src="img/Rectangle 31.png" alt="">
+                      <button id="see">see more</button>
+                      <span id="names">
+                      <h4>Succulents</h4>
+                      <p>30.00$</p>
+                      <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></button>
+                      </span>
+                      </div>
+                    <div class=" d1">
+                      <img src="img/Rectangle 36.png" alt="">
+                      <button id="see">see more</button>
+                      <span id="names">
+                        <h4>Bromeliads</h4>
+                        <p>50.00$</p>
+                        <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                      </span>
+                      </div>
+                     <div class="d2">
+                      <img src="img/Rectangle 34.png" alt="">
+                      <button id="see">see more</button>
+                      <span id="names">
+                      <h4>Calathea</h4>
+                        <p>20.00$</p>
+                        <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                          </span>
+                    </div>
+                     <div class=" d3">
+                      <img src="img/Rectangle 35.png" alt="">
+                      <button id="see">see more</button>
+                      <span id="names">
+                      <h4>Croton</h4>
+                        <p>40.00$</p>
+                        <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                          </span>
+                          </div>
+                  </div>
+                </div>
+              </div>
+                <div class="carousel-item cr">
+                  <div class="row2">
+                    <div class="d">
+                      <img src="img/Rectangle 31.png" alt="">
+                      <button id="see">see more</button>
+                      <span id="names">
+                      <h4>Succulents</h4>
+                      <p>30.00$</p>
+                      <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></button>
+                      </span>
+                      </div>
+                    <div class=" d1">
+                      <img src="img/Rectangle 36.png" alt="">
+                      <button id="see">see more</button>
+                      <span id="names">
+                        <h4>Bromeliads</h4>
+                        <p>50.00$</p>
+                        <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                      </span>
+                      </div>
+                     <div class="d2">
+                      <img src="img/Rectangle 34.png" alt="">
+                      <button id="see">see more</button>
+                      <span id="names">
+                      <h4>Calathea</h4>
+                        <p>20.00$</p>
+                        <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                          </span>
+                    </div>
+                     <div class=" d3">
+                      <img src="img/Rectangle 35.png" alt="">
+                      <button id="see">see more</button>
+                      <span id="names">
+                      <h4>Croton</h4>
+                        <p>40.00$</p>
+                        <button class="b"> <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 3.51852H22L19.75 11.7037H6.25M19.75 14.2222H7L3.25 1H1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.25 18C19.0784 18 19.75 17.4362 19.75 16.7407C19.75 16.0452 19.0784 15.4814 18.25 15.4814C17.4216 15.4814 16.75 16.0452 16.75 16.7407C16.75 17.4362 17.4216 18 18.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M8.5 18C9.32843 18 10 17.4362 10 16.7407C10 16.0452 9.32843 15.4814 8.5 15.4814C7.67157 15.4814 7 16.0452 7 16.7407C7 17.4362 7.67157 18 8.5 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                          </span>
+                          </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </section>
+
+          <section id="contactus">
+           
+            <h1 id="a"> CONTACT US</h1>
+            <div class="contact">
+              <form id="cform" action="">
+                <h4 id="ch">contact</h4>
+            <input type="text" id="fname" placeholder="First Name" maxlength="10" class="in"> 
+            <input type="text" id="lname" placeholder="Last Name" maxlength="10" class="in">  <br>
+            <input type="email" id="email" placeholder="Email"  class="in1"> <br>
+            <input type="text" id="message" placeholder="Message" class="in1">  <br> 
+            <input type="submit" id="submit" value="send" class="btn4" > <br>
+              </form>
+            <img id="w" src="img/Rectangle 33.png" alt="">
+            </div>
+            
+          </section>
+
+          <section id="footer">
+            <div class="row">    
+              <div class="foo">
+                <div id="o" class="col-lg-6">
+               <h3 class="l2">logo</h3>
+              <p id="pfoo">owalos provide artificial handmade flowers to make your home beautiful </p>
+            </div>
+            <div class="col-lg-6">
+              <table  id="table2">
+                <tr>
+                  <th>QUICK LINKS</th>
+                  <th>CONTACT US</th>
+                  <th>FOLLOW US</th>
+                </tr>
+                <tr>
+                  <td>Home</td>
+                  <td><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48303 0.793297C3.70003 -0.416703 5.70403 -0.201703 6.72303 1.1603L7.98503 2.8443C8.81503 3.9523 8.74103 5.5003 7.75603 6.4793L7.51803 6.7173C7.49115 6.81722 7.48841 6.9221 7.51003 7.0233C7.57303 7.4313 7.91403 8.2953 9.34203 9.7153C10.77 11.1353 11.64 11.4753 12.054 11.5393C12.1582 11.5615 12.2662 11.5584 12.369 11.5303L12.777 11.1243C13.653 10.2543 14.997 10.0913 16.081 10.6803L17.991 11.7203C19.628 12.6083 20.041 14.8323 18.701 16.1653L17.28 17.5773C16.832 18.0223 16.23 18.3933 15.496 18.4623C13.686 18.6313 9.46903 18.4153 5.03603 14.0083C0.899027 9.8943 0.105027 6.3063 0.00402701 4.5383C-0.045973 3.6443 0.376027 2.8883 0.914027 2.3543L2.48303 0.793297ZM5.52303 2.0593C5.01603 1.3823 4.07203 1.3283 3.54003 1.8573L1.97003 3.4173C1.64003 3.7453 1.48203 4.1073 1.50203 4.4533C1.58203 5.8583 2.22203 9.0953 6.09403 12.9453C10.156 16.9833 13.907 17.1043 15.357 16.9683C15.653 16.9413 15.947 16.7873 16.222 16.5143L17.642 15.1013C18.22 14.5273 18.093 13.4813 17.275 13.0373L15.365 11.9983C14.837 11.7123 14.219 11.8063 13.835 12.1883L13.38 12.6413L12.85 12.1093C13.38 12.6413 13.378 12.6423 13.378 12.6423L13.377 12.6443L13.374 12.6473L13.367 12.6533L13.352 12.6673C13.3095 12.7061 13.264 12.7415 13.216 12.7733C13.136 12.8263 13.03 12.8853 12.897 12.9343C12.627 13.0353 12.269 13.0893 11.827 13.0213C10.96 12.8883 9.81103 12.2973 8.28403 10.7793C6.75803 9.2613 6.16203 8.1193 6.02803 7.2533C5.95903 6.8113 6.01403 6.4533 6.11603 6.1833C6.17259 6.03156 6.25293 5.88979 6.35403 5.7633L6.38603 5.7283L6.40003 5.7133L6.40603 5.7073L6.40903 5.7043L6.41103 5.7023L6.69903 5.4163C7.12703 4.9893 7.18703 4.2823 6.78403 3.7433L5.52303 2.0593Z" fill="#D6EFD8"/>
+                    </svg> &nbsp;  8979925
+                    </td>
+               <td> <button id="social"><svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.57529 0.997483C7.91651 0.930601 7.25442 0.898053 6.59195 0.899983C4.3957 0.899983 3.0308 2.23873 3.0308 4.39373V5.85686H1.18591C1.0993 5.85686 1.01625 5.88978 0.955013 5.94839C0.893777 6.00699 0.859375 6.08648 0.859375 6.16936V8.57561C0.859375 8.65849 0.893777 8.73797 0.955013 8.79658C1.01625 8.85518 1.0993 8.88811 1.18591 8.88811H3.0308V13.7131C3.0308 13.796 3.06521 13.8755 3.12644 13.9341C3.18768 13.9927 3.27073 14.0256 3.35733 14.0256H5.95521C6.04181 14.0256 6.12487 13.9927 6.1861 13.9341C6.24734 13.8755 6.28174 13.796 6.28174 13.7131V8.88811H8.12076C8.20004 8.88814 8.27662 8.86058 8.33622 8.81055C8.39583 8.76053 8.43438 8.69146 8.44468 8.61623L8.76925 6.20998C8.7753 6.16588 8.77143 6.12105 8.75791 6.07849C8.7444 6.03593 8.72155 5.99662 8.69088 5.96319C8.66022 5.92976 8.62245 5.90299 8.58011 5.88465C8.53776 5.86631 8.49181 5.85684 8.44533 5.85686H6.28174V4.63248C6.28174 4.02623 6.40909 3.77311 7.20125 3.77311H8.53284C8.61945 3.77311 8.7025 3.74018 8.76374 3.68158C8.82497 3.62297 8.85938 3.54349 8.85938 3.46061V1.30748C8.85941 1.23161 8.83061 1.15832 8.77834 1.10128C8.72607 1.04424 8.6539 1.00735 8.57529 0.997483ZM8.20631 3.14748L7.2006 3.14811C5.79195 3.14811 5.62868 3.99561 5.62868 4.63248V6.16998C5.62868 6.25275 5.66299 6.33215 5.72409 6.39073C5.78518 6.44932 5.86807 6.48232 5.95456 6.48248H8.0744L7.83342 8.26373H5.95521C5.86861 8.26373 5.78556 8.29666 5.72432 8.35526C5.66308 8.41387 5.62868 8.49335 5.62868 8.57623V13.4H3.68386V8.57623C3.68386 8.49335 3.64946 8.41387 3.58823 8.35526C3.52699 8.29666 3.44394 8.26373 3.35733 8.26373H1.51309V6.48248H3.35733C3.44394 6.48248 3.52699 6.44956 3.58823 6.39095C3.64946 6.33235 3.68386 6.25286 3.68386 6.16998V4.39373C3.68386 2.59748 4.77121 1.52498 6.59195 1.52498C7.25089 1.52498 7.84582 1.55936 8.20631 1.58936V3.14748Z" fill="#D6EFD8"/>
+                </svg>
+                </button> &nbsp;
+                <button id="social"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.49062 2.88955C4.98381 2.88955 4.48838 3.03984 4.06698 3.32141C3.64558 3.60298 3.31713 4.00319 3.12318 4.47142C2.92923 4.93966 2.87849 5.45489 2.97736 5.95197C3.07624 6.44905 3.32029 6.90564 3.67866 7.26401C4.03704 7.62238 4.49363 7.86644 4.99071 7.96531C5.48778 8.06419 6.00302 8.01344 6.47125 7.81949C6.93949 7.62554 7.33969 7.2971 7.62127 6.8757C7.90284 6.4543 8.05312 5.95887 8.05312 5.45205C8.05395 5.11531 7.98823 4.78172 7.85975 4.47045C7.73126 4.15918 7.54254 3.87637 7.30442 3.63825C7.06631 3.40014 6.78349 3.21142 6.47223 3.08293C6.16096 2.95445 5.82737 2.88873 5.49062 2.88955ZM5.49062 7.1208C5.16058 7.1208 4.83794 7.02293 4.56352 6.83957C4.28909 6.6562 4.0752 6.39558 3.9489 6.09065C3.8226 5.78573 3.78955 5.4502 3.85394 5.12649C3.91833 4.80279 4.07726 4.50545 4.31064 4.27207C4.54402 4.03869 4.84136 3.87975 5.16507 3.81537C5.48877 3.75098 5.8243 3.78402 6.12923 3.91033C6.43415 4.03663 6.69478 4.25052 6.87814 4.52494C7.0615 4.79937 7.15937 5.122 7.15937 5.45205C7.15937 5.89463 6.98356 6.31908 6.67061 6.63203C6.35766 6.94499 5.93321 7.1208 5.49062 7.1208ZM8.75937 2.7833C8.75937 2.90691 8.72272 3.02775 8.65404 3.13053C8.58537 3.23331 8.48776 3.31342 8.37355 3.36073C8.25935 3.40803 8.13368 3.42041 8.01244 3.39629C7.89121 3.37218 7.77984 3.31265 7.69243 3.22524C7.60503 3.13784 7.5455 3.02647 7.52138 2.90523C7.49727 2.78399 7.50965 2.65833 7.55695 2.54412C7.60426 2.42992 7.68436 2.33231 7.78714 2.26363C7.88992 2.19496 8.01076 2.1583 8.13437 2.1583C8.30013 2.1583 8.45911 2.22415 8.57632 2.34136C8.69353 2.45857 8.75937 2.61754 8.75937 2.7833ZM10.4531 3.4083C10.472 2.6312 10.1821 1.8783 9.64687 1.31455C9.36924 1.04617 9.0414 0.83516 8.68214 0.693598C8.32287 0.552036 7.93922 0.482698 7.55312 0.489551C6.74062 0.452051 4.24062 0.452051 3.42812 0.489551C2.65138 0.472732 1.89923 0.762364 1.33437 1.2958C0.799183 1.85955 0.509261 2.61245 0.528125 3.38955C0.490625 4.20205 0.490625 6.70205 0.528125 7.51455C0.509261 8.29165 0.799183 9.04455 1.33437 9.6083C1.89923 10.1417 2.65138 10.4314 3.42812 10.4146C4.25312 10.4646 6.72813 10.4646 7.55312 10.4146C8.33023 10.4334 9.08313 10.1435 9.64687 9.6083C10.1821 9.04455 10.472 8.29165 10.4531 7.51455C10.4906 6.70205 10.4906 4.20205 10.4531 3.38955V3.4083ZM9.39062 8.4083C9.30577 8.62326 9.17766 8.8185 9.01424 8.98192C8.85083 9.14533 8.65559 9.27344 8.44062 9.3583C7.47037 9.55446 6.47848 9.62171 5.49062 9.5583C4.50485 9.62116 3.51509 9.55391 2.54688 9.3583C2.33191 9.27344 2.13667 9.14533 1.97326 8.98192C1.80984 8.8185 1.68173 8.62326 1.59687 8.4083C1.33438 7.7458 1.39063 6.1833 1.39063 5.4583C1.39063 4.7333 1.33438 3.16455 1.59687 2.5083C1.67934 2.29122 1.80653 2.0939 1.9702 1.92916C2.13386 1.76442 2.33034 1.63594 2.54688 1.55205C3.51509 1.35644 4.50485 1.28919 5.49062 1.35205C6.47848 1.28864 7.47037 1.35589 8.44062 1.55205C8.65559 1.63691 8.85083 1.76502 9.01424 1.92843C9.17766 2.09185 9.30577 2.28709 9.39062 2.50205C9.65312 3.16455 9.59062 4.72705 9.59062 5.45205C9.59062 6.17705 9.65312 7.7458 9.39062 8.40205V8.4083Z" fill="#D6EFD8"/>
+                  </svg>
+                  </button> &nbsp;
+                  <button  id="social"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.30762 10.6777C2.41074 11.3159 3.69137 11.6152 5.05762 11.6152C9.10762 11.6152 12.4089 8.40461 12.5526 4.38898L13.8076 1.92773L11.7114 2.24023C11.2546 1.83744 10.6666 1.6152 10.0576 1.61523C8.45012 1.61523 7.24512 3.18836 7.63262 4.72773C5.41262 4.87148 3.40074 3.50336 2.23699 1.68086C1.46449 4.30398 2.18074 7.46273 4.12012 9.40961C4.12012 10.1446 2.24512 10.5834 1.30762 10.6777Z" stroke="#D6EFD8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </button>
+                </td>
+                
+                </tr>
+                <tr>
+                  <td>Products</td>
+                  <td><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.75 12.5V2.25H1H1.25V12.5H0.75ZM18.75 12.5V2.25H19H19.25V12.5H18.75ZM18.6775 13.5H19.1937C19.1003 13.9099 18.893 14.289 18.591 14.591C18.289 14.893 17.9099 15.1003 17.5 15.1937V14.6775C18.0643 14.5094 18.5094 14.0643 18.6775 13.5ZM16.5 14.75V15.25H3.5V14.75H16.5ZM2.5 14.6775V15.1937C2.09009 15.1003 1.71104 14.893 1.40901 14.591C1.10698 14.289 0.899687 13.9099 0.806251 13.5H1.32254C1.4906 14.0643 1.93575 14.5094 2.5 14.6775ZM17.75 1V1.25H2.25V1V0.75H17.75V1Z" fill="#D6EFD8" stroke="#D6EFD8"/>
+                    <path d="M1 1L10 10L19 1" fill="#D6EFD8"/>
+                    <path d="M1 1L10 10L19 1" stroke="#D6EFD8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> &nbsp;   info@gmail.com
+                    </td>
+                  <td></td>
+                  
+                </tr>
+                <tr>
+                  <td>About Us</td>
+                </tr>
+                <tr>
+                  <td>Services</td>
+                </tr>
+              </table>
+            </div>
+            </div> 
+            </div>
+          </section>
+          <div id="popup">
+            <div class="pop">
+                <p id="p1">Are you sure you want to log out?</p>
+                <br><br><input id="logout" type="button" value="Logout" onclick="window.location.href='signup.html'" >
+                <br><br><input id="cancel" type="button" value="cancel" onclick="back()">
+            </div>
+        </div>
+
+        <script>
+          function popup(){
+              var b = document.getElementById("logo");
+              b.classList.toggle('active');
+              // var b1 = document.getElementById("l2");
+              // b1.classList.toggle('active');
+              document.getElementById("popup").style.display = "block";
+          }
+          function back(){
+              var a = document.getElementById("logo");
+              a.classList.remove('active');
+              // var a1 = document.getElementById("l2");
+              // a1.classList.remove('active');
+              document.getElementById("popup").style.display = "none";
+          }
+       //darkmode
+          let darkmood = localStorage.getItem("dark-mood");
+      const themeswitch = document.getElementById("theme-switch");
+      const enableDarkmood = ()=>{
+          document.body.classList.add('dark-mood');
+          localStorage.setItem('dark-mood' , 'active')
+      }
+      const disableDarkmood= ()=>{
+          document.body.classList.remove('dark-mood');
+          localStorage.setItem('dark-mood' , null)
+      }
+      if(darkmood==="active") enableDarkmood()
+      themeswitch.addEventListener("click", ()=>{
+          darkmood = localStorage.getItem('dark-mood')
+          darkmood !== "active" ? enableDarkmood() : disableDarkmood()
+      }) 
+  </script>
+ 
+</body>
+</html>

@@ -10,14 +10,18 @@
     --secondary-color:linear-gradient(180deg, #508D4E -14.81%, #161313 100%); 
     --third-color:#FFFFFF1A; 
     --forth-color: #1A5319;
+    --fifth-color:#7C8761AB;
+    --sixth-color:#ffffff;
    
-    
+  
 }
 .dark-mood{
-    --primary-color: linear-gradient(108.81deg, #222222 -21.51%, #243024 36.42%, rgba(0, 0, 0, 0.9) 87.8%);
-    --secondary-color:linear-gradient(180deg, #ffffffcb -14.81%, #158b1f6c 100%);
+    --primary-color: linear-gradient(108.81deg, #4C5537 -21.51%, #4D724E 36.42%, rgba(9, 41, 9, 0.9) 87.8%);
+    --secondary-color:linear-gradient(180deg, #D6EFD8 -14.81%, #7C8761 100%);
     --third-color: #04240b93;
     --forth-color:#fff;
+    --fifth-color: #D6EFD8;
+    --sixth-color:#7C8761;
 }
 body{
     margin-top: 50px;
@@ -40,8 +44,8 @@ body{
     /* #F1F1F17A */
     box-shadow: -47.43px 47.43px 47.43px 0px #FFFFFF1A inset;
     box-shadow: 47.43px -47.43px 47.43px 0px #C2C2C21A inset;
-    background:var(--third-color);
-    backdrop-filter: blur(10px);
+    background:#FFFFFF1A;
+    backdrop-filter: blur(10%);
     z-index: 1;
     animation: slide 0.6s ease-out;
 }
@@ -121,9 +125,10 @@ h3{
     margin-bottom: 20px;
     padding: 8px 0px 12px 0px;
     border-radius: 45px;
-    background: #7C8761AB;
-    border: 1px solid #FCFCFC;
-    color: #ffffff;
+    background: var(--fifth-color);
+    border: 1px solid var(--sixth-color) ;   
+    /* #FCFCFC */
+    color: var(--sixth-color);
     font-family: "Poppins";
     font-size: 20px;
     font-weight: 500;
@@ -139,9 +144,8 @@ select {
     top: 10%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
-    background-color: #f9f9f9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     background:var(--third-color);
     backdrop-filter: blur(60px);
